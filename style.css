@@ -86,3 +86,26 @@ a{
     font-size: 30px;
 }
 
+/*about me page*/
+#headshot{
+    height: auto;
+    max-width: 30%;
+    float: right;
+    padding: 20px;
+}
+.aboutInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    border: 2px solid #FA2742;
+    width: 50%;
+    height: 100%;
+}
+#aboutText{
+    text-align: center;
+    color:rgb(222, 221, 221);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
