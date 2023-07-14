@@ -119,15 +119,24 @@ a{
 
 /*projects page*/
 .todo,
-.craigslist{
-    max-width: 80%;
+.craigslist,
+.gallery,
+.instagram{
+    margin-bottom: 40px;
     height: auto;
     padding: 0px;
-    margin-bottom: 20px;
     border: 3px solid;
     border-radius: 4px;
     border-image: linear-gradient(45deg, #FA2742, #fe347e, #9934fe) 1;
     box-shadow: 0px 0px 2px 2px #d934fe; 
+}
+.todo, 
+.gallery,
+.instagram{
+    max-width: 80%;
+}
+.craigslist{
+    max-width: 40%;
 }
 .projectsInfo{
     display: flex;
@@ -138,12 +147,16 @@ a{
     width: 60%;
     height: 100%;
 }
-.project1,
-.project2{
+#project1,
+#project2,
+#project3,
+#project4{
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-height: 100%;
+    /* max-height: 100%; */
+    padding-bottom: 20px;
+    border-bottom: 2px solid #FA2742;
 }
 p{
     text-align: center;
@@ -173,8 +186,7 @@ p{
     display: flex;
     justify-content: center;
 }
-#todoHeader,
-#craigslistHeader{
+.projHeader{
     text-align: center;
     color:rgb(222, 221, 221);
     font-family: 'Play', sans-serif;
@@ -185,7 +197,7 @@ p{
 }
 .projectLink{
     color: #fe347e;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Play', sans-serif;
     font-weight: 400;
     font-style:normal;
     text-decoration: none;
@@ -202,10 +214,15 @@ button{
     /* border-image: linear-gradient(45deg, #FA2742, #fe347e, #9934fe) 1; */
     box-shadow: 0px 0px 2px 2px #fa2742; 
     padding: 2px;
-    margin: 2px;
+    margin: 4px;
     background: none;
     color: #fa2742;
     font-family: 'Play', sans-serif;
     font-size: 20px;
 }
+#proj2ImgContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
