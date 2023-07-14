@@ -4,15 +4,16 @@ html{
     height: 100%;
 }
 body {
-    background: rgb(204, 225, 232);
     background-image: radial-gradient(rgb(54, 53, 53), rgb(19, 18, 18));
     height: 100%;
 }
 h1{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Play', sans-serif;
     text-align: center;
     color:white;
     opacity: 87%;
+    margin-bottom: 0px;
+    font-size: 40px;
 }
 .content{
     /* border: 2px solid rgb(77, 77, 219); */
@@ -23,7 +24,7 @@ h1{
     justify-content: center;
 }
 .innerContainer{
-    height: 80%;
+    height: 90%;
     /* border: 2px solid yellow; */
     display: flex;
     justify-content: space-evenly;
@@ -35,7 +36,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     float: left;
-    width: 30%;
+    width: 20%;
     height: 100%;
     /* border: 2px solid #FA2742; */
 
@@ -52,13 +53,12 @@ a{
     color: #FA2742;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    font-style: italic;
+    /* font-style: italic; */
     text-decoration: none;
     font-size: 30px;
     padding: 20px;
 }
 .active{
-    /* background-color: rgb(222, 221, 221); */
     font-weight: 500;
     border-style: solid;
     border-width: 5px;
@@ -87,6 +87,15 @@ a{
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     width: 80%;
+    border-style: solid;
+    border-width: 5px;
+    border-image: 
+    linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0),
+      #FA2742, 
+      rgba(0, 0, 0, 0)
+    )100% 1;
 }
 
 /*about me page*/
@@ -94,14 +103,17 @@ a{
     height: auto;
     max-width: 30%;
     float: right;
-    padding: 20px;
+    margin: 20px;
+    border: 3px solid #FA2742;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px#FA2742;
+    /* border-image: linear-gradient(10deg, rgb(56, 18, 18), #FA2742) 1; */
 }
 .aboutInfo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     float: right;
-    border: 2px solid #FA2742;
     width: 60%;
     height: 100%;
 }
@@ -114,6 +126,17 @@ a{
 }
 .aboutContainerInner{
     float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-style: solid;
+    border-width: 5px;
+    border-image: 
+    linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0),
+      #FA2742, 
+      rgba(0, 0, 0, 0)
+    )100% 1;
 }
 
 
@@ -128,12 +151,12 @@ a{
     border: 3px solid;
     border-radius: 4px;
     border-image: linear-gradient(45deg, #FA2742, #fe347e, #9934fe) 1;
-    box-shadow: 0px 0px 2px 2px #d934fe; 
+    box-shadow: 0px 0px 1px 1px #d934fe; 
 }
 .todo, 
 .gallery,
 .instagram{
-    max-width: 80%;
+    max-width: 60%;
 }
 .craigslist{
     max-width: 40%;
@@ -155,8 +178,17 @@ a{
     align-items: center;
     flex-direction: column;
     /* max-height: 100%; */
-    padding-bottom: 20px;
-    border-bottom: 2px solid #FA2742;
+    margin: 40px;
+    padding: 30px;
+    border: 3px solid #FA2742;
+    border-radius: 20px;
+    box-shadow: -3px 7px 3px 0.5px #FA2742;
+}
+#project1:hover,
+#project2:hover,
+#project3:hover,
+#project4:hover{
+    box-shadow: -3px 7px 5px 3px #FA2742;
 }
 p{
     text-align: center;
@@ -171,15 +203,22 @@ p{
     width: 90%;
     float: left;
     max-height: 100%;
+    margin-right: 30px;
 }
 #arrow{
     float: right;
-    color: white;
+    /* color: white; */
     width: 5%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+p.arrow{
+    background-image: linear-gradient(160deg, #FA2742,  #9934fe);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .projectsContainerOuter{
     max-height: 100%;
@@ -192,8 +231,9 @@ p{
     font-family: 'Play', sans-serif;
     font-size: 30px;
     border-bottom: 3px solid;
-    border-image: linear-gradient(45deg, #FA2742, #fe347e, #9934fe, blue) 1;
+    border-image: linear-gradient(45deg, #FA2742, #fe347e, #9934fe, rgb(89, 0, 255)) 1;
     margin-bottom: 40px;
+    margin-top: 0px;
 }
 .projectLink{
     color: #fe347e;
@@ -211,14 +251,18 @@ p{
 button{
     border: 3px solid #FA2742;
     border-radius: 4px;
-    /* border-image: linear-gradient(45deg, #FA2742, #fe347e, #9934fe) 1; */
-    box-shadow: 0px 0px 2px 2px #fa2742; 
+    border-image: linear-gradient(45deg, #FA2742, #fe347e, #9934fe) 1;
+    box-shadow: 0px 0px 1.5px 1.5px #d934fe; 
     padding: 2px;
     margin: 4px;
     background: none;
-    color: #fa2742;
+    color: #fe347e;
     font-family: 'Play', sans-serif;
     font-size: 20px;
+}
+button:hover,
+.projectLink:hover{
+    box-shadow: 0px 0px 3px 3px #d934fe; 
 }
 #proj2ImgContainer{
     display: flex;
