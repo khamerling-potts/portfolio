@@ -21,7 +21,7 @@ function showDescription(event){
         description.innerHTML = "<a class='projectLink' href=https://khamerling-potts.github.io/07-image-gallery/>Open Image Gallery app</a> <br><br>This interactive image gallery allows users to expand images and navigate through the gallery one image at a time. This was another exercise to practice JavaScript, HTML and CSS."
     }
     else if (project.id === "project4"){
-        description.innerHTML = "<a class='projectLink' href=https://khamerling-potts.github.io/05-instagram-clone/>Open Instagram Clone page</a> <br><br>This project uses HTML and CSS to imitate the appearance of the Instagram website."
+        description.innerHTML = "<a class='projectLink' href=https://khamerling-potts.github.io/05-instagram-clone/>Open Instagram Clone page</a> <br><br>This project uses HTML and CSS to create a visual 'clone' of the Instagram website."
     }
     
     project.appendChild(description);
