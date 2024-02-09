@@ -1,22 +1,11 @@
+import NavBar from "../components/NavBar";
+
 function About() {
   return (
     <body>
-      <h1 id="nameHeader">KHP</h1>
       <h2 id="aboutHeader">About me</h2>
-      <script src="script.js" defer></script>
       <div class="content">
         <div class="innerContainer">
-          <section class="navSection">
-            <nav class="sidenav">
-              <a href="index.html">Home</a>
-              <a class="active" href="about.html">
-                About
-              </a>
-              <a href="projects.html">Projects</a>
-              <a href="contact.html">Contact</a>
-            </nav>
-          </section>
-
           <section class="aboutInfo">
             <section class="aboutContainerOuter">
               <section class="aboutContainerInner">

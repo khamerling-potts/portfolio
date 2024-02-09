@@ -1,21 +1,11 @@
+import NavBar from "../components/NavBar";
 function Home() {
   return (
     <body>
-      <h3>(Currently converting to React. Stay tuned!)</h3>
-      <script src="script.js" defer></script>
-      <div class="content">
-        <div class="innerContainer">
-          <section class="navSection">
-            <nav class="sidenav">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a href="about.html">About</a>
-              <a href="projects.html">Projects</a>
-              <a href="contact.html">Contact</a>
-            </nav>
-          </section>
+      <h2 id="homeHeader">Welcome to my website</h2>
 
+      <div className="content">
+        <div className="innerContainer">
           <section class="textSection">
             <section class="textContainer">
               <section class="textContainerInner">

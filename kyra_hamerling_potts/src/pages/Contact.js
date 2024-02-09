@@ -1,22 +1,10 @@
 function Contact() {
   return (
     <body>
-      <h1 id="nameHeader">KHP</h1>
       <h2 id="contactHeader">Contact</h2>
       <script src="script.js" defer></script>
       <div class="content">
         <div class="innerContainer">
-          <section class="navSection">
-            <nav class="sidenav">
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="projects.html">Projects</a>
-              <a class="active" href="contact.html">
-                Contact
-              </a>
-            </nav>
-          </section>
-
           <section class="textSection">
             <section class="textContainer">
               <p id="connect">Connect with me</p>
