@@ -6,11 +6,13 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="appHeader">
         <h1 id="nameHeader">KHP</h1>
       </header>
-      <NavBar />
-      <Outlet />
+      <div className="pageContainer">
+        <NavBar />
+        <Outlet />
+      </div>
     </div>
   );
 }

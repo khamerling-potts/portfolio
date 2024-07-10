@@ -50,7 +50,84 @@ body {
   margin: 0px;
 }
 
-h2 {
+.sidenav * {
+  box-sizing: border-box; /* Added box-sizing property */
+}
+/* Responsive positioning */
+
+.pageContainer {
+  display: flex;
+  /* justify-content: center; */
+  /* border: 2px solid green; */
+  max-height: 100vh;
+}
+/* formatting nav area on the left*/
+.navSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  float: left;
+  width: 40%;
+  height: 100%;
+  /* border: 2px solid #FA2742; */
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 2px solid green; */
+  text-align: center;
+  height: 60%;
+}
+
+#nameHeader {
+  width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .pageContainer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* border: 2px solid green; */
+  }
+  /* formatting nav area on the left*/
+  .navSection {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    width: 100%;
+    margin-top: 0;
+    box-sizing: border-box;
+    /* margin-top: 100px;
+  float: left;
+  width: 40%;
+  height: 100%; */
+    /* border: 2px solid #fa2742; */
+  }
+
+  .sidenav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* border: 2px solid green; */
+    text-align: center;
+    /* overflow: hidden; */
+    /* box-sizing: border-box; */
+    /* height: 60%; */
+  }
+
+  #nameHeader {
+    width: 100%;
+  }
+}
+
+.sectionHeader {
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: white;
@@ -104,26 +181,6 @@ h3 {
   justify-content: space-evenly;
 }
 
-/* formatting nav area on the left*/
-.navSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  float: left;
-  width: 20%;
-  height: 100%;
-  /* border: 2px solid #FA2742; */
-}
-
-.sidenav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* border: 2px solid green; */
-  text-align: center;
-  height: 60%;
-}
-
 a {
   color: #fa2742;
   font-family: "Poppins", sans-serif;
@@ -138,6 +195,7 @@ a {
   border-style: solid;
   border-width: 5px;
   border-image: linear-gradient(to bottom, #fa2742, rgba(0, 0, 0, 0)) 1 100%;
+  /* box-sizing: border-box; */
 }
 
 /*formatting text area on the right*/

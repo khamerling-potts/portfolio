@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 function About() {
   return (
     <body>
-      <h2 id="aboutHeader">About me</h2>
+      <h2 className="sectionHeader">About me</h2>
       <div class="content">
         <div class="innerContainer">
           <section class="aboutInfo">

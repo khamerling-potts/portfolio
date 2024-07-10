@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <body>
-      <h2 id="contactHeader">Contact</h2>
+      <h2 className="sectionHeader">Contact</h2>
       <script src="script.js" defer></script>
       <div class="content">
         <div class="innerContainer">
