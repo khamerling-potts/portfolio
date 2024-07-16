@@ -4,8 +4,8 @@ function About() {
   return (
     <div className="content">
       <h2 className="sectionHeader">About Me</h2>
-      <section class="textContainerInner">
-        <img src="../images/headshot2.png" id="headshot" />
+      <section className="textContainerInner aboutTextContainer">
+        <img src="./images/headshot2.png" id="headshot" />
         <p id="aboutText">
           I was born in Washington, DC, and have had an interest in STEM fields
           and social sciences from a young age. I studied psychology and
