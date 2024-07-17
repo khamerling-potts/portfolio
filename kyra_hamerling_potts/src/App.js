@@ -18,10 +18,10 @@ function App() {
       </div> */}
       <Container>
         <Row>
-          <Col xs={4}>
+          <Col xs={12} sm={4}>
             <NavBar />
           </Col>
-          <Col xs={8}>
+          <Col xs={12} sm={8}>
             <Outlet />
           </Col>
         </Row>

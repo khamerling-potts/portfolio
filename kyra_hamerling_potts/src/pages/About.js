@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 function About() {
   return (
     // <div className="content">
-    <Container>
+    <Container className="aboutContainer">
       <Row className="g-4">
         <h2 className="sectionHeader">About Me</h2>
       </Row>
