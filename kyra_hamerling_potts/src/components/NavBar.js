@@ -4,16 +4,16 @@ function NavBar() {
   return (
     <section class="navSection">
       <nav class="sidenav">
-        <NavLink to="/" className="nav-link">
+        <NavLink to="/" className="navlink">
           Home
         </NavLink>
-        <NavLink to="/about" className="nav-link">
+        <NavLink to="/about" className="navlink">
           About
         </NavLink>
-        <NavLink to="/projects" className="nav-link">
+        <NavLink to="/projects" className="navlink">
           Projects
         </NavLink>
-        <NavLink to="/contact" className="nav-link">
+        <NavLink to="/contact" className="navlink">
           Contact
         </NavLink>
       </nav>

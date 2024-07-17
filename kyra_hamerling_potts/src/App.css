@@ -14,15 +14,33 @@ body {
 .sidenav * {
   box-sizing: border-box; /* Added box-sizing property */
 }
+
+.App {
+  height: 100vh;
+  /* border: 2px solid pink; */
+}
 /* Responsive positioning */
 
 .pageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid green;
-  height: 95vh;
+  /* border: 2px solid green; */
+
+  /* header height: 67.5px */
+  height: calc(100vh - 67.5px);
   width: 100vw;
+}
+
+.container {
+  /* header height: 67.5px */
+  height: calc(100vh - 67.5px);
+  border: 2px solid green;
+}
+
+.col-4,
+.col-8 {
+  align-content: center;
 }
 /* formatting nav area on the left*/
 .navSection {
@@ -30,46 +48,49 @@ body {
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  /* margin-top: 100px; */
   float: left;
-  border: 2px solid #fa2742;
-  width: 30%;
+  width: 100%;
 }
 
 .sidenav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid green;
   text-align: center;
   height: 60%;
 }
 
-#nameHeader {
-  width: 20%;
-}
-.navSection * {
-  box-sizing: border-box;
+.navlink {
+  color: #fa2742;
+  text-decoration: none;
 }
 
-.textContainerInner {
-  max-height: 100%;
+#nameHeader {
+  width: 150px;
+}
+/* .navSection * {
+  box-sizing: border-box;
+} */
+
+.homeTextContainer {
+  height: 90%;
   overflow-y: auto;
   /* position: relative; */
 }
 
-.content {
-  /* border: 2px solid rgb(77, 77, 219); */
-  height: 95%;
+/* .content {
+  height: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 70%;
   border: solid 2px blue;
-}
+} */
 
 /**** MOBILE LAYOUT HOME ****/
 @media only screen and (max-width: 600px) {
+  .App {
+    height: auto;
+  }
   .pageContainer {
     display: flex;
     flex-direction: column;
@@ -99,19 +120,21 @@ body {
     width: 100%;
   }
 
-  .nav-link {
+  .navlink {
     font-size: 25px;
     width: 100%;
   }
 
   .content {
-    width: auto;
+    width: 100vw;
+    padding: 0;
   }
 
   .textContainerInner {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
   }
 }
 /****  ****/
@@ -121,12 +144,13 @@ body {
   text-align: center;
   color: white;
   opacity: 87%;
-  margin-bottom: 0px;
-  margin-top: 40px;
+  /* margin-bottom: 40px; */
+  /* margin-top: 40px; */
   font-size: 60px;
   font-variant: small-caps;
   letter-spacing: 5px;
   font-weight: 200;
+  height: 10%;
 }
 
 h1 {
@@ -217,6 +241,7 @@ a {
   text-align: right;
   margin: 0px;
   font-weight: 500;
+  width: 100%;
 }
 
 #homeIntro2 {
@@ -234,11 +259,12 @@ a {
 /*about me page*/
 
 #aboutText {
-  text-align: center;
+  text-align: justify;
   color: rgb(222, 221, 221);
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 300;
+  /* flex: 1; */
 }
 
 .aboutTextContainer {
@@ -255,7 +281,15 @@ a {
       rgba(0, 0, 0, 0)
     )
     100% 1;
+  padding: 20px;
+  overflow-y: auto;
+  height: 90%;
 }
+
+/* .aboutHeader {
+  padding-bottom: 40px;
+  height: 20%;
+} */
 
 @media only screen and (max-width: 600px) {
   #headshot {
@@ -269,10 +303,10 @@ a {
 
 @media only screen and (min-width: 601px) {
   #headshot {
-    height: auto;
-    max-width: 15%;
+    width: auto;
+    height: 150px;
     float: right;
-    margin: 20px;
+    margin-left: 20px;
     border: 3px solid #fa2742;
     border-radius: 10px;
     box-shadow: 0px 0px 2px 2px#FA2742;

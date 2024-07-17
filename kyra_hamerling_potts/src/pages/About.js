@@ -1,12 +1,18 @@
 import NavBar from "../components/NavBar";
 import headshot from "../images/headshot2.png";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 function About() {
   return (
-    <div className="content">
-      <h2 className="sectionHeader">About Me</h2>
-      <section className="textContainerInner aboutTextContainer">
+    // <div className="content">
+    <Container>
+      <Row className="g-4">
+        <h2 className="sectionHeader">About Me</h2>
+      </Row>
+      <section className="aboutTextContainer">
         <img src={headshot} id="headshot" />
+
         <p id="aboutText">
           <p>
             My name is Kyra Hamerling-Potts and I am a full-stack software
@@ -41,7 +47,9 @@ function About() {
           </p>
         </p>
       </section>
-    </div>
+    </Container>
+
+    // </div>
     // <>
     //   <h2 className="sectionHeader">About me</h2>
     //   <div class="content">
