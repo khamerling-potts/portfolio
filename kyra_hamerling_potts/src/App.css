@@ -339,8 +339,18 @@ a {
 }
 
 #projectAccordion {
-  --bs-accordion-bg: "transparent";
+  --bs-accordion-bg: transparent;
+  --bs-accordion-btn-color: rgb(222, 221, 221);
+  --bs-accordion-border-color: transparent;
+  --bs-accordion-active-color: rgb(222, 221, 221);
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-color: transparent;
+  --bs-accordion-btn-focus-box-shadow: none;
+  /* Replace fill color below to change accordion icon color */
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(222, 221, 221)'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(222, 221, 221)'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
+
 .projectCard .projHeader {
   text-align: center;
   color: rgb(222, 221, 221);
@@ -355,6 +365,9 @@ a {
       rgb(89, 0, 255)
     )
     1;
+}
+.projectCard .card-body {
+  padding: 0px;
 }
 
 #projectAccordion .accordion-item {
@@ -377,65 +390,7 @@ a {
   cursor: pointer;
 }
 
-.custom-accordion-header:hover {
-  background-color: #e9ecef; /* Example hover effect */
-}
-
-.todo,
-.craigslist,
-.gallery,
-.instagram,
-.weather {
-  margin-bottom: 40px;
-  height: auto;
-  padding: 0px;
-  border: 3px solid;
-  border-radius: 4px;
-  border-image: linear-gradient(45deg, #fa2742, #fe347e, #9934fe) 1;
-  box-shadow: 0px 0px 1px 1px #d934fe;
-}
-
-.todo,
-.gallery,
-.instagram,
-.weather {
-  max-width: 60%;
-}
-
-.craigslist {
-  max-width: 40%;
-}
-
-.projectsInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  float: right;
-  /* border: 2px solid #FA2742; */
-  width: 60%;
-  height: 100%;
-}
-
-#project0,
-#project1,
-#project2,
-#project3,
-#project4 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 40px;
-  padding: 30px;
-  border: 3px solid #fa2742;
-  border-radius: 20px;
-  box-shadow: -3px 7px 3px 0.5px #fa2742;
-}
-
-#project0:hover,
-#project1:hover,
-#project2:hover,
-#project3:hover,
-#project4:hover {
+.projectCard:hover {
   box-shadow: -3px 7px 5px 3px #fa2742;
 }
 
@@ -445,15 +400,6 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 300;
-}
-
-.projectsContainerInner {
-  overflow-y: auto;
-  overflow-x: hidden;
-  width: 90%;
-  float: left;
-  max-height: 100%;
-  margin-right: 30px;
 }
 
 #arrow {
@@ -472,26 +418,7 @@ p.arrow {
   color: transparent;
 }
 
-.projectsContainerOuter {
-  max-height: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.projectLink {
-  color: #fe347e;
-  font-family: "Play", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  font-size: 25px;
-  border: 3px solid;
-  border-radius: 4px;
-  border-image: linear-gradient(45deg, #fa2742, #fe347e, #9934fe) 1;
-  box-shadow: 0px 0px 2px 2px #d934fe;
-  padding: 5px;
-}
-
+/* 
 button {
   border: 3px solid #fa2742;
   border-radius: 4px;
@@ -503,17 +430,7 @@ button {
   color: #fe347e;
   font-family: "Play", sans-serif;
   font-size: 20px;
-}
-
-button:hover,
-.projectLink:hover {
-  box-shadow: 0px 0px 3px 3px #d934fe;
-}
-
-#proj2ImgContainer {
-  display: flex;
-  justify-content: space-evenly;
-}
+} */
 
 /*contact page*/
 .iconContainer {
