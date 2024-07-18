@@ -7,10 +7,10 @@ function About() {
   return (
     // <div className="content">
     <Container className="aboutContainer">
-      <Row className="g-4">
+      <Row className="g-6">
         <h2 className="sectionHeader">About Me</h2>
       </Row>
-      <section className="aboutTextContainer">
+      <section id="aboutTextContainer">
         <img src={headshot} id="headshot" />
 
         <p id="aboutText">

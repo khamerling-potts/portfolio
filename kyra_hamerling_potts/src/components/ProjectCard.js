@@ -4,8 +4,11 @@ import Accordion from "react-bootstrap/Accordion";
 
 function ProjectCard({ title, img, github, description }) {
   return (
-    <Col>
+    <Col className="projectCol">
       <Card className="projectCard">
+        <Card.Header>
+          <a href={github}>Link</a>
+        </Card.Header>
         <Card.Img variant="top" src={img} className="projectImg" />
         <Card.Body>
           <Card.Title className="projHeader">{title}</Card.Title>
