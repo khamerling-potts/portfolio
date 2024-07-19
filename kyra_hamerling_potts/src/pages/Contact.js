@@ -1,40 +1,38 @@
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import outlookImg from "../images/outlook.png";
+import twitterImg from "../images/twitter.png";
+import githubImg from "../images/github.png";
+import ContactInfo from "../components/ContactInfo";
+
 function Contact() {
   return (
-    <body>
+    <Container className="contactContainer">
       <h2 className="sectionHeader">Contact</h2>
-      <script src="script.js" defer></script>
-      <div class="content">
-        <div class="innerContainer">
-          <section class="textSection">
-            <section class="textContainer">
-              <p id="connect">Connect with me</p>
-              <section class="iconContainer">
-                <a href="mailto:khamerling-potts@wustl.edu" class="icon">
-                  <div>
-                    <img src="./outlook.png" class="iconimage" />
-                  </div>
-                  Email
-                </a>
 
-                <a href="https://twitter.com/kyrahp_" class="icon">
-                  <div>
-                    <img src="./twitter.png" class="iconimage" />
-                  </div>
-                  Twitter
-                </a>
+      <section id="contactInnerContainer">
+        <p id="connect">Connect with me</p>
 
-                <a href="https://github.com/khamerling-potts" class="icon">
-                  <div>
-                    <img src="./github.png" class="iconimage" />
-                  </div>
-                  Github
-                </a>
-              </section>
-            </section>
-          </section>
-        </div>
-      </div>
-    </body>
+        <Row className="g-6" xs={1} sm={3}>
+          <ContactInfo
+            link="mailto:khamerling-potts@wustl.edu"
+            icon={outlookImg}
+            name="Email"
+          />
+          <ContactInfo
+            link="https://twitter.com/kyrahp_"
+            icon={twitterImg}
+            name="Twitter"
+          />
+          <ContactInfo
+            link="https://github.com/khamerling-potts"
+            icon={githubImg}
+            name="Github"
+          />
+        </Row>
+      </section>
+    </Container>
   );
 }
 
