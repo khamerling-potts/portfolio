@@ -63,16 +63,24 @@ body {
   color: #fa2742;
   text-decoration: none;
 }
+.navlink:hover {
+  color: rgb(222, 221, 221);
+  text-shadow: 0 0 1px #f08d9b, 0 0 5px #f08d9b, 0 0 7px #f08d9b,
+    0 0 10px #fa2742, 0 0 15px #fa2742, 0 0 20px #fa2742, 0 0 25px #fa2742,
+    0 0 30px #fa2742;
+  font-weight: normal;
+}
 
 #nameHeader {
   width: 150px;
+  font-weight: 300;
 }
 /* .navSection * {
   box-sizing: border-box;
 } */
 
 .homeTextContainer {
-  height: 90%;
+  height: 85%;
   overflow-y: auto;
   /* position: relative; */
 }
@@ -389,7 +397,11 @@ a {
   font-family: "Play", sans-serif;
 }
 .projectCard a:hover {
-  color: #9934fe;
+  color: white;
+  /* color: #9934fe; */
+  text-shadow: 0 0 5px #fe85fe, 0 0 10px #fe85fe, 0 0 15px #fe85fe,
+    0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff,
+    0 0 75px #ff00ff;
 }
 
 .projectCard .projectImg {
