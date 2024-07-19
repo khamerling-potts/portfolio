@@ -348,12 +348,26 @@ a {
   }
 }
 .projectCol:nth-child(7) {
+  /*This is the 'older projects' header*/
   flex: 100%;
-  border: 1px solid white;
-  color: white;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      #2e2d2d,
+      #717171,
+      rgb(222, 221, 221),
+      #717171,
+      #2e2d2d,
+      rgba(0, 0, 0, 0)
+    )
+    100% 1;
+  color: #e6e6e6;
+  margin-top: 40px;
 }
 .projectCol:nth-child(7) h2 {
   text-align: center;
+  font-weight: lighter;
 }
 
 .projectCard.card {
@@ -385,6 +399,10 @@ a {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   padding: 10px;
+}
+#projectSubtitle {
+  text-align: left;
+  color: #adaeb0;
 }
 
 .card-text {

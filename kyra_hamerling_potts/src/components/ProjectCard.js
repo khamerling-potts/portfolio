@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Accordion from "react-bootstrap/Accordion";
 
-function ProjectCard({ title, img, github, description }) {
+function ProjectCard({ title, img, headline, github, description }) {
   return (
     <Col className="projectCol">
       <Card className="projectCard">
@@ -11,7 +11,13 @@ function ProjectCard({ title, img, github, description }) {
         </Card.Header>
         <Card.Img variant="top" src={img} className="projectImg" />
         <Card.Body>
-          <Card.Title className="projHeader">{title}</Card.Title>
+          <Card.Title className="projHeader">
+            {title}
+            <Card.Subtitle className="mt-1" id="projectSubtitle">
+              {headline}
+            </Card.Subtitle>
+          </Card.Title>
+
           {/* <Card.Text> */}
           <Accordion flush id="projectAccordion">
             <Accordion.Item eventKey="0">
