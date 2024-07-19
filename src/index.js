@@ -4,15 +4,20 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import {
   createBrowserRouter,
+  createHashRouter,
   RouterProvider,
   BrowserRouter,
+  HashRouter,
 } from "react-router-dom";
 import routes from "./routes";
 
 // Importing the Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
+import App from "./App";
 
-const router = createBrowserRouter(routes, { basename: "/portfolio" });
+// const router = createBrowserRouter(routes, { basename: "/portfolio" });
+//Using Hash Router to try to get it to cooperate with GH pages
+const router = createHashRouter(routes);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={router} />);
 
