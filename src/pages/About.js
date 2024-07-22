@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar";
-import headshot from "../images/headshot2.png";
+import headshot from "../images/headshot.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
